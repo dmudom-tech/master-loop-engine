@@ -1,0 +1,685 @@
+# MASTER LOOP ENGINE V100
+## MARKET_BREADTH.md
+
+Version : V100.0.0 Enterprise LTS
+
+Module
+
+Market Intelligence Engine
+
+---
+
+# Purpose
+
+Market Breadth evaluates the participation quality of the overall market.
+
+Rather than measuring index movement alone, Market Breadth determines whether market gains or losses are broadly supported across securities, sectors, and industries.
+
+A healthy market requires broad participation.
+
+Weak breadth indicates that only a few large-cap stocks are driving the index.
+
+Market Breadth is a leading indicator for trend sustainability.
+
+---
+
+# Objectives
+
+Evaluate
+
+• Market Participation
+
+• Market Internal Strength
+
+• Breadth Momentum
+
+• Breadth Divergence
+
+• Sector Participation
+
+• Market Leadership
+
+Generate
+
+• Breadth Score
+
+• Breadth Classification
+
+• Breadth Trend
+
+• Breadth Confidence
+
+---
+
+# Data Sources
+
+SET Realtime
+
+Index Realtime
+
+Market Statistics
+
+Sector Index
+
+Industry Index
+
+Security Statistics
+
+Advance / Decline Data
+
+Trading Value
+
+Trading Volume
+
+New High
+
+New Low
+
+52 Week High
+
+52 Week Low
+
+Investor Statistics
+
+Program Trading
+
+NVDR
+
+Short Sale
+
+Historical Market Breadth
+
+---
+
+# Processing Pipeline
+
+Realtime Data
+
+↓
+
+Validation
+
+↓
+
+Normalization
+
+↓
+
+Breadth Indicators
+
+↓
+
+Breadth Components
+
+↓
+
+Breadth Score
+
+↓
+
+Breadth Classification
+
+↓
+
+Evidence Generation
+
+↓
+
+AI Committee
+
+---
+
+# Breadth Components
+
+Advance Decline
+
+Up Volume
+
+Down Volume
+
+New High
+
+New Low
+
+Sector Participation
+
+Industry Participation
+
+Equal Weight Participation
+
+Market Leadership
+
+Market Concentration
+
+---
+
+# Component Weights
+
+| Component | Weight |
+|-----------|--------|
+| Advance / Decline | 25% |
+| Up / Down Volume | 20% |
+| New High / New Low | 15% |
+| Sector Participation | 15% |
+| Industry Participation | 10% |
+| Equal Weight Strength | 5% |
+| Market Leadership | 5% |
+| Market Concentration | 5% |
+
+Total = 100%
+
+---
+
+# Advance Decline Analysis
+
+Calculate
+
+Advancing Stocks
+
+Declining Stocks
+
+Unchanged Stocks
+
+Advance / Decline Ratio
+
+Advance / Decline Line
+
+Advance Percentage
+
+Decline Percentage
+
+---
+
+# Volume Participation
+
+Calculate
+
+Up Volume
+
+Down Volume
+
+Volume Ratio
+
+Buying Pressure
+
+Selling Pressure
+
+Participation Ratio
+
+---
+
+# New High New Low
+
+Calculate
+
+New 52 Week High
+
+New 52 Week Low
+
+High / Low Ratio
+
+Breakout Count
+
+Breakdown Count
+
+---
+
+# Sector Participation
+
+Evaluate
+
+Positive Sectors
+
+Negative Sectors
+
+Leading Sector
+
+Lagging Sector
+
+Sector Rotation
+
+Sector Breadth
+
+---
+
+# Industry Participation
+
+Evaluate
+
+Positive Industries
+
+Negative Industries
+
+Industry Breadth
+
+Industry Momentum
+
+Industry Leadership
+
+---
+
+# Equal Weight Analysis
+
+Compare
+
+SET Index
+
+Equal Weight Index
+
+Participation Difference
+
+Concentration Risk
+
+---
+
+# Leadership Analysis
+
+Identify
+
+Large Cap Leadership
+
+Mid Cap Leadership
+
+Small Cap Leadership
+
+Growth Leadership
+
+Value Leadership
+
+---
+
+# Market Concentration
+
+Measure
+
+Top 5 Weight
+
+Top 10 Weight
+
+Top 20 Weight
+
+Index Dependency
+
+Breadth Dependency
+
+---
+
+# Breadth Divergence
+
+Detect
+
+Price ↑ Breadth ↓
+
+Price ↓ Breadth ↑
+
+Hidden Weakness
+
+Hidden Strength
+
+Early Warning Signal
+
+---
+
+# Breadth Trend
+
+Possible States
+
+Improving
+
+Stable
+
+Weakening
+
+Expanding
+
+Contracting
+
+Recovering
+
+Deteriorating
+
+---
+
+# Breadth Classification
+
+| Score | Classification |
+|--------|----------------|
+| 90–100 | Extremely Broad |
+| 80–89 | Broad |
+| 70–79 | Healthy |
+| 60–69 | Neutral |
+| 50–59 | Narrow |
+| 40–49 | Weak |
+| Below 40 | Extremely Weak |
+
+---
+
+# Breadth Score
+
+Range
+
+0–100
+
+---
+
+# Confidence Score
+
+Calculated From
+
+Data Freshness
+
+Data Completeness
+
+Indicator Agreement
+
+Historical Reliability
+
+Market Stability
+
+Range
+
+0–100
+
+---
+
+# Decision Rules
+
+Broad Breadth
+
+↓
+
+Increase Confidence
+
+Support Bull Market
+
+Healthy Breadth
+
+↓
+
+Maintain Exposure
+
+Neutral Breadth
+
+↓
+
+Selective Buying
+
+Weak Breadth
+
+↓
+
+Reduce Aggressive Positions
+
+Extremely Weak Breadth
+
+↓
+
+Increase Cash
+
+Avoid New Positions
+
+---
+
+# Evidence Requirements
+
+Every Breadth Score must include
+
+Advance / Decline
+
+Volume Participation
+
+Sector Participation
+
+Industry Participation
+
+Leadership
+
+Concentration
+
+Historical Comparison
+
+---
+
+# Output Contract
+
+Generate
+
+Breadth Score
+
+Breadth Classification
+
+Breadth Trend
+
+Advance / Decline Ratio
+
+Volume Ratio
+
+New High Count
+
+New Low Count
+
+Sector Participation Score
+
+Industry Participation Score
+
+Leadership Score
+
+Market Concentration Score
+
+Breadth Divergence
+
+Confidence
+
+Evidence
+
+Recommendation
+
+---
+
+# Input Contract
+
+Required
+
+Market Statistics
+
+Realtime Prices
+
+Sector Data
+
+Industry Data
+
+Historical Breadth
+
+Optional
+
+Program Trading
+
+NVDR
+
+Short Sale
+
+Investor Statistics
+
+---
+
+# Scheduler
+
+08:00
+
+Morning Breadth Analysis
+
+09:30–16:30
+
+Realtime Refresh
+
+Every 5 Minutes
+
+16:40
+
+Closing Breadth Analysis
+
+20:00
+
+Historical Learning
+
+---
+
+# Error Handling
+
+Missing Breadth Data
+
+↓
+
+Use Previous Session
+
+Missing Sector Data
+
+↓
+
+Estimate from Available Sectors
+
+Collector Failure
+
+↓
+
+Retry
+
+↓
+
+Fallback Cache
+
+↓
+
+Continue Processing
+
+---
+
+# Monitoring
+
+Collector Status
+
+API Health
+
+Breadth Freshness
+
+Calculation Time
+
+Memory Usage
+
+CPU Usage
+
+Scheduler Status
+
+---
+
+# Integration
+
+Consumed By
+
+Market Engine
+
+Market Health
+
+Market Regime
+
+Risk Engine
+
+Portfolio Engine
+
+Decision Engine
+
+Dashboard
+
+Learning Engine
+
+AI Committee
+
+---
+
+# Unit Test Scenarios
+
+Scenario 1
+
+Bull Market
+
+Broad Participation
+
+Expected
+
+Breadth > 80
+
+---
+
+Scenario 2
+
+Index Rising
+
+Breadth Falling
+
+Expected
+
+Negative Divergence
+
+Warning Generated
+
+---
+
+Scenario 3
+
+Market Crash
+
+Expected
+
+Breadth < 30
+
+Risk Alert
+
+---
+
+Scenario 4
+
+Sector Rotation
+
+Expected
+
+Leadership Change Detected
+
+---
+
+Scenario 5
+
+Missing Data
+
+Expected
+
+Fallback Activated
+
+No System Failure
+
+---
+
+# Acceptance Criteria
+
+The engine shall
+
+• Calculate Breadth Score (0–100)
+
+• Detect Breadth Divergence
+
+• Evaluate Market Participation
+
+• Generate Explainable Evidence
+
+• Calculate Confidence Score
+
+• Complete within 3 seconds
+
+• Support Replay
+
+• Support Backtesting
+
+• Support Continuous Learning
+
+---
+
+End of Document
